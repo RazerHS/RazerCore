@@ -1,0 +1,12 @@
+{
+    "name": "com.razercore.utils",
+    "version": "1.0.0",
+    "displayName": "RazerCore Utils",
+    "description": "Helpful utils scripts. Useful for every project!",
+    "unity": "2023.1",
+    "author":  {
+        "name": "Igor Kovacevic",
+        "email": "igor.kovacevic550@gmail.com",
+        "url": "https://www.igikovacevic.com"
+    }
+}
