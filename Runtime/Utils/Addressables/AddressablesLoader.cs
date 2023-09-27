@@ -1,5 +1,3 @@
-
-#if CC_ADDRESSABLES
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,7 +10,7 @@ using UnityEngine.ResourceManagement.ResourceProviders;
 using CardboardCore.DI;
 #endif
 
-namespace RazerCore.Addressables
+namespace RazerCore.Utils.Addressables
 {
 #if CC_DI
     [Injectable]
@@ -80,4 +78,3 @@ namespace RazerCore.Addressables
         }
     }
 }
-#endif

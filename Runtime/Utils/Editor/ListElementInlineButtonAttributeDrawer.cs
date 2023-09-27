@@ -1,5 +1,5 @@
 ﻿
-#if CC_ODIN
+#if ODIN_INSPECTOR_3
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.OdinInspector.Editor.ActionResolvers;
