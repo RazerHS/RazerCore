@@ -1,5 +1,3 @@
-
-#if ODIN_INSPECTOR_3
 using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
 using UnityEngine;
@@ -63,4 +61,3 @@ namespace RazerCore.Utils.Editor
         }
     }
 }
-#endif
