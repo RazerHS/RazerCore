@@ -2,7 +2,6 @@
 #if ODIN_INSPECTOR_3
 using System;
 using Sirenix.OdinInspector;
-using Sirenix.OdinInspector.Editor;
 
 namespace RazerCore.Utils.Attributes
 {
