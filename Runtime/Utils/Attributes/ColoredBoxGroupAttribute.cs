@@ -27,14 +27,25 @@ namespace RazerCore.Utils.Attributes
             Fold = fold;
         }
 
+        public ColoredBoxGroupAttribute(string path, bool fold, bool randomColor) : base(path)
+        {
+            this.R = UnityEngine.Random.Range(0f, 1f);
+            this.G = UnityEngine.Random.Range(0f, 1f);
+            this.B = UnityEngine.Random.Range(0f, 1f);
+            this.A = 1f;
+
+            LabelText = path[(path.LastIndexOf("/", StringComparison.Ordinal) + 1)..];
+            Fold = fold;
+        }
+
         protected override void CombineValuesWith(PropertyGroupAttribute other)
         {
             ColoredBoxGroupAttribute otherAttr = (ColoredBoxGroupAttribute)other;
 
             this.R = Math.Max(otherAttr.R, this.R);
-            this.R = Math.Max(otherAttr.G, this.G);
-            this.R = Math.Max(otherAttr.B, this.B);
-            this.R = Math.Max(otherAttr.A, this.A);
+            this.G = Math.Max(otherAttr.G, this.G);
+            this.B = Math.Max(otherAttr.B, this.B);
+            this.A = Math.Max(otherAttr.A, this.A);
         }
     }
 }
