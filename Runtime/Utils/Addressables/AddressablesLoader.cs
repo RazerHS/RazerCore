@@ -7,7 +7,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 
 #if CC_DI
-using CardboardCore.DI;
+using LinxCore.DI;
 #endif
 
 namespace RazerCore.Utils.Addressables
